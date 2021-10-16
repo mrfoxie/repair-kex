@@ -12,4 +12,5 @@ sudo chmod +x repair-kex
 ```
 cd ~/repair-kex
 chmod +x uninstall-kex
+./uninstall-kex
 ```
