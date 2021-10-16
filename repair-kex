@@ -1,0 +1,15 @@
+
+sudo apt-get install tigervnc-standalone-server tigervnc-xorg-extension mate --install-recommends
+sudo chmod +x kex-start kex-kill kex-passwd
+sudo cp kex-start /usr/local/bin/
+sudo cp kex-kill /usr/local/bin/
+sudo cp kex-passwd /usr/local/bin/
+sudo updatedb
+
+printf "\033[0;33m ###################################################\n"
+printf "\033[0;33m # success!!                                       #\n"
+printf "\033[0;33m # kex is been repaired successfully               #\n"
+printf "\033[0;33m ###################################################\n"
+printf "\033[0;32m kex-passwd  # to set or change vnc passwd\n"
+printf "\033[0;32m kex-start   # to start vnc server\n"
+printf "\033[0;32m kex-kill    # to stop vnc server\n"

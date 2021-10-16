@@ -1,0 +1,1 @@
+tigervncserver -geometry 1920x1080 -xstartup /usr/bin/xfce4-session -listen tcp :1
