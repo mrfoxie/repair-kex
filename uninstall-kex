@@ -1,0 +1,7 @@
+sudo apt purge tigervnc-standalone-server tigervnc-xorg-extension mate -y
+sudo apt autoremove
+sudo rm-rf /usr/local/bin/kex-start
+sudo rm -rf /usr/local/bin/kex-kill
+sudo rm -rf /usr/local/bin/kex-passwrd
+sudo updatedb
+printf "\033[0;33m # kex successfully removed.\n"
