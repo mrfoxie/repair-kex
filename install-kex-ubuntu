@@ -1,6 +1,0 @@
-sudo apt-get install nano tigervnc-standalone-server tigervnc-xorg-extension mate apt-transport-https -y
-sudo chmod +x kex-start kex-kill kex-passwd
-sudo cp kex-start /usr/local/bin/
-sudo cp kex-kill /usr/local/bin/
-sudo cp kex-passwd /usr/local/bin/
-sudo updatedb
