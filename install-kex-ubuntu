@@ -1,27 +1,6 @@
-printf "\033[0;32m reparing kex\n"
-sudo apt-get install nano tigervnc-standalone-server tigervnc-xorg-extension mate apt-transport-https -y --install-recommends
-printf "\033[0;32m changing permissions.\n"
+sudo apt-get install nano tigervnc-standalone-server tigervnc-xorg-extension mate apt-transport-https -y
 sudo chmod +x kex-start kex-kill kex-passwd
-printf "\033[0;32m copying file.\n"
 sudo cp kex-start /usr/local/bin/
 sudo cp kex-kill /usr/local/bin/
 sudo cp kex-passwd /usr/local/bin/
-printf "\033[0;32m copying completed.\n"
-printf "\033[0;32m updating database.\n"
 sudo updatedb
-
-printf "\033[0;32m cleaning up...\n"
-sudo apt autoremove -v
-printf "\033[0;32m adding bug...\n"
-printf "\033[0;32m adding bug...\n"
-printf "\033[0;32m just kidding.\n"
-printf "\033[0;32m \n"
-printf "\033[0;32m \n"
-printf "\033[0;33m ###################################################\n"
-printf "\033[0;33m # success!!                                       #\n"
-printf "\033[0;33m # kex is been repaired successfully               #\n"
-printf "\033[0;33m ###################################################\n"
-printf "\033[0;32m kex-passwd  # to set or change vnc passwd\n"
-printf "\033[0;32m kex-start   # to start vnc server\n"
-printf "\033[0;32m kex-kill    # to stop vnc server\n"
-
