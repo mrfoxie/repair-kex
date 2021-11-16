@@ -2,8 +2,9 @@
 This is for kex repair and solve all vnc server error in kalinethunter
 # Installation
 ```
-sudo apt update && sudo apt upgrade
-sudo apt install git # ignore if installed
+sudo apt update 
+sudo apt install git -y # ignore if installed
+# ignore upper lines if you already installed git
 cd ~/
 git clone https://github.com/mrfoxie/repair-kex.git
 cd repair-kex
