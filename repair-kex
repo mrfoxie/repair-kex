@@ -1,15 +1,5 @@
-printf "\033[0;32m reparing kex\n"
-sudo apt-get install nano tigervnc-standalone-server tigervnc-xorg-extension mate apt-transport-https -y --install-recommends
-sudo chmod +x kex-start kex-kill kex-passwd
-sudo cp kex-start /usr/local/bin/
-sudo cp kex-kill /usr/local/bin/
-sudo cp kex-passwd /usr/local/bin/
-sudo updatedb
-
-printf "\033[0;32m \n"
-printf "\033[0;32m \n"
 printf "\033[0;32m backing up resolv.conf\n"
-sudo rm -rf /etc/resolv.conf && sudo touch /etc/resolv.conf
+sudo mv /etc/resolv.conf /etc/resolv.conf.bak && sudo touch /etc/resolv.conf
 printf "\033[0;32m adding google dns\n"
 sudo echo "nameserver 8.8.8.8" >> /etc/resolv.conf
 sudo echo "nameserver 8.8.4.4" >> /etc/resolv.conf
@@ -26,6 +16,16 @@ printf "\033[0;32m adding bug...\n"
 printf "\033[0;32m just kidding.\n"
 printf "\033[0;32m \n"
 printf "\033[0;32m \n"
+clear
+printf "\033[0;32m reparing kex\n"
+sudo apt-get install nano tigervnc-standalone-server tigervnc-xorg-extension mate apt-transport-https -y --install-recommends
+sudo chmod +x kex-start kex-kill kex-passwd
+sudo cp kex-start /usr/local/bin/
+sudo cp kex-kill /usr/local/bin/
+sudo cp kex-passwd /usr/local/bin/
+sudo updatedb
+
+
 printf "\033[0;33m ###################################################\n"
 printf "\033[0;33m # success!!                                       #\n"
 printf "\033[0;33m # kex is been repaired successfully               #\n"
