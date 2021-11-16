@@ -1,4 +1,4 @@
-[![GitHub Clones](https://img.shields.io/badge/dynamic/json?color=success&label=Clone&query=count&url=https://github.com/mrfoxie/repair-kex?raw=True&logo=github)](https://github.com/MShawon/github-clone-count-badge)
+[![GitHub Clones](https://img.shields.io/badge/dynamic/json?color=success&label=Clone&query=count&url=https://github.com/mrfoxie/repair-kex?raw=True&logo=github)](https://github.com/mrfoxie/repair-kex)
 
 # Repair Kex in Kali NetHunter Rootless
 This is for kex repair and solve all vnc server error in kalinethunter
