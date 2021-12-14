@@ -1,0 +1,88 @@
+#!/bin/bash
+# This is a beta testing.
+printf "\033[0;31m ███╗   ███╗██████╗ ███████╗ ██████╗ ██╗  ██╗██╗███████╗ \n
+printf "\033[0;31m ████╗ ████║██╔══██╗██╔════╝██╔═══██╗╚██╗██╔╝██║██╔════╝ \n"
+printf "\033[0;31m ██╔████╔██║██████╔╝█████╗  ██║   ██║ ╚███╔╝ ██║█████╗   \n"
+printf "\033[0;31m ██║╚██╔╝██║██╔══██╗██╔══╝  ██║   ██║ ██╔██╗ ██║██╔══╝   \n"
+printf "\033[0;31m ██║ ╚═╝ ██║██║  ██║██║     ╚██████╔╝██╔╝ ██╗██║███████╗ \n"
+printf "\033[0;31m ╚═╝     ╚═╝╚═╝  ╚═╝╚═╝      ╚═════╝ ╚═╝  ╚═╝╚═╝╚══════╝ \n"
+printf "\n"
+printf "\033[0;32m This is the beta testing. If there is any error then create issue @github mrfoxie/repair-kex.\n"
+printf "\n"
+printf "\n"
+printf "Process will start in few seconds\n"
+sleep 5s
+clear
+
+# Changing location for faster repo.
+printf "\033[0;31m Changing Location.\n"
+echo "LC_ALL=en_US.UTF-8" | sudo tee -a /etc/environment
+echo "en_US.UTF-8 UTF-8" | sudo tee -a /etc/locale.gen
+echo "LANG=en_US.UTF-8" | sudo tee -a /etc/locale.conf
+sudo locale-gen en_US.UTF-8
+sleep 2s
+clear
+
+# Backing up resolv.conf
+printf "\033[0;32m Backing up resolv.conf\n"
+sudo mv /etc/resolv.conf /etc/resolv.conf.bak && sudo touch /etc/resolv.conf
+sleep 2s
+clear
+
+# Adding google dns.
+printf "\033[0;32m Adding google dns\n"
+sudo echo "nameserver 8.8.8.8" >> /etc/resolv.conf
+sudo echo "nameserver 8.8.4.4" >> /etc/resolv.conf
+sleep 2s
+clear
+
+# Backing up main Source repo.
+printf "\033[0;32m Backing up main sources.\n"
+sudo mv /etc/apt/sources.list /etc/apt/sources.list.bak
+sleep 2s
+clear
+
+# Adding new fastest Repository.
+printf "\033[0;32m Adding new fast repository\n"
+sudo touch /etc/apt/sources.list
+sudo echo "deb https://http.kali.org/kali kali-rolling main contrib non-free" >> /etc/apt/sources.list
+sleep 2s
+clear
+
+# Updating packages
+printf "\033[0;32m If apt update not working then remove current sources.list and rename sources.list.bak to sources.list \n"
+sudo apt update
+
+# Removing unwanted packages
+printf "\033[0;32m cleaning up...\n"
+sudo apt autoremove -v
+sleep 2s
+clear
+
+# Reparing vncserver
+printf "\033[0;32m Reparing kex\n"
+sudo apt-get install nano tigervnc-standalone-server tigervnc-xorg-extension mate apt-transport-https -y --install-recommends
+
+# Copying files to local bin folder for easy access.
+printf "\033[0;032m Copying files to local bin folder for easy access. \n"
+sudo chmod +x kex-start kex-kill kex-passwd
+sudo cp kex-start /usr/local/bin/
+sudo cp kex-kill /usr/local/bin/
+sudo cp kex-passwd /usr/local/bin/
+sudo updatedb
+clear
+
+
+printf "\033[0;032m Finalizing all things. \n"
+sleep 2s
+clear
+
+printf "\033[0;33m ###################################################\n"
+printf "\033[0;33m # success!!                                       #\n"
+printf "\033[0;33m # kex is been repaired successfully               #\n"
+printf "\033[0;33m ###################################################\n"
+printf "\033[0;32m kex-passwd  # to set or change vnc passwd\n"
+printf "\033[0;32m kex-start   # to start vnc server\n"
+printf "\033[0;32m kex-kill    # to stop vnc server\n"
+sleep 5s
+printf "\033[0;31m Thank you for using it. \n"
