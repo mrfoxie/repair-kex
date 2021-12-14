@@ -1,4 +1,4 @@
-# Repair Kex in Kali NetHunter Rootless
+# Repair Kex in Kali NetHunter Rootless [![GitHub Clones](https://img.shields.io/badge/dynamic/json?color=success&label=Clone&query=count&url=https://github.com/mrfoxie/repair-kex/blob/master/clone.json?raw=True&logo=github)](https://github.com/mrfoxie/repair-kex)
 This is for kex repair and solve all vnc server error in kalinethunter
 # Installation
 ```
