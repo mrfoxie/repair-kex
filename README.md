@@ -1,6 +1,7 @@
 # Repair Kex in Kali NetHunter Rootless 
 This is for kex repair and solve all vnc server error in kalinethunter
-# Installation
+
+# Installation-NetHunter
 ```
 sudo apt update 
 sudo apt install git -y # ignore if installed
@@ -11,6 +12,17 @@ cd repair-kex
 sudo chmod +x repair-kex
 sudo ./repair-kex
 ```
+
+# Beta Installation-NetHunter
+```
+# Most of NetHunter already have git pre installed if not then install it.
+cd ~/
+git clone https://github.com/mrfoxie/repair-kex.git
+cd repair-kex
+sudo chmod +x repair-kex
+sudo ./repair-kex
+```
+
 # Uninstall
 ```
 cd ~/repair-kex
