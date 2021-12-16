@@ -78,6 +78,13 @@ printf "\033[0;032m Finalizing all things. \n"
 sleep 2s
 clear
 
+printf "\033[0;31m ███╗   ███╗██████╗ ███████╗ ██████╗ ██╗  ██╗██╗███████╗ \n"
+printf "\033[0;31m ████╗ ████║██╔══██╗██╔════╝██╔═══██╗╚██╗██╔╝██║██╔════╝ \n"
+printf "\033[0;31m ██╔████╔██║██████╔╝█████╗  ██║   ██║ ╚███╔╝ ██║█████╗   \n"
+printf "\033[0;31m ██║╚██╔╝██║██╔══██╗██╔══╝  ██║   ██║ ██╔██╗ ██║██╔══╝   \n"
+printf "\033[0;31m ██║ ╚═╝ ██║██║  ██║██║     ╚██████╔╝██╔╝ ██╗██║███████╗ \n"
+printf "\033[0;31m ╚═╝     ╚═╝╚═╝  ╚═╝╚═╝      ╚═════╝ ╚═╝  ╚═╝╚═╝╚══════╝ \n"
+printf "\033[0;31m\n"
 printf "\033[0;33m ###################################################\n"
 printf "\033[0;33m # success!!                                       #\n"
 printf "\033[0;33m # kex is been repaired successfully               #\n"
@@ -85,5 +92,7 @@ printf "\033[0;33m ###################################################\n"
 printf "\033[0;32m kex-passwd  # to set or change vnc passwd\n"
 printf "\033[0;32m kex-start   # to start vnc server\n"
 printf "\033[0;32m kex-kill    # to stop vnc server\n"
+printf "\033[0;32m packing up all things.\n"
+
 sleep 5s
 printf "\033[0;31m Thank you for using it. \n"
