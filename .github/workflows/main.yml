@@ -19,7 +19,7 @@ jobs:
           deps_repo_owner:          mrfoxie
 
           stat_repo_owner:          mrfoxie
-          stat_repo:                github-accum-stats
+          stat_repo:                repair-kex
           stat_entity_path:         traffic/clones
           stat_repo_read_token:     ${{ secrets.GITHUB_TOKEN }}
           stats_list_key:           clones
