@@ -14,7 +14,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: mrfoxie/gh-action--accum-gh-stats@master
+      - uses: mrfoxie/repair-kex@master
         with:
           deps_repo_owner:          mrfoxie
 
@@ -27,7 +27,7 @@ jobs:
           curl_flags: >-
             -H 'Cache-Control: no-cache'
 
-          output_repo_owner:        andry81
+          output_repo_owner:        mrfoxie
           output_repo:              github-accum-stats--gh-stats
           output_repo_branch:       master
           output_repo_dir:          traffic/clones
