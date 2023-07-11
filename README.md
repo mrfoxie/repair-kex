@@ -24,6 +24,8 @@ sudo ./repair-kex
 # Beta Installation-NetHunter
 ```
 # Most of NetHunter already have git pre installed if not then install it.
+sudo apt update
+sudo apt install git -y
 cd ~/
 git clone https://github.com/mrfoxie/repair-kex.git
 cd repair-kex
