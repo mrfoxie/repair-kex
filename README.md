@@ -30,7 +30,7 @@ cd ~/
 git clone https://github.com/mrfoxie/repair-kex.git
 cd repair-kex
 sudo chmod +x repair-kex
-sudo ./repair-kex
+sudo ./beta-repair-kex
 ```
 
 # Uninstall
